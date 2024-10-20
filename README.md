@@ -79,7 +79,6 @@ This is my personal website, but if you want to view it, make your own with a si
 
 
 or If you'd like to contribute:
-
     1. Fork this repository.
     2. Create a new branch (git checkout -b feature/feature-name).
     3. Commit your changes (git commit -m 'Add some feature').
