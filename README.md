@@ -51,6 +51,9 @@ To run this project locally, you'll need:
     ```bash
     http://localhost:port
     ```
+
+---
+
 ## Folder Structure
 
 ```plaintext
@@ -64,6 +67,8 @@ kleinpanic-website/
 ├── server.js         # Entry point for the server
 └── README.md         # Project documentation
 ```
+
+---
 
 ## Contribution
 
@@ -81,6 +86,10 @@ or If you'd like to contribute:
     4. Push to the branch (git push origin feature/feature-name).
     5. Open a Pull Request.
 
+---
+
 ## License 
 
 Read the LICENSE file. 
+
+---
