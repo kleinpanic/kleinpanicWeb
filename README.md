@@ -73,16 +73,24 @@ kleinpanic-website/
 ## Contribution
 
 This is my personal website, but if you want to view it, make your own with a similar view and functionality:
+
     1. clone this repository 
+       
     2. View code
+
     3. Do whatever 
 
 
 or If you'd like to contribute:
+
     1. Fork this repository.
+
     2. Create a new branch (git checkout -b feature/feature-name).
+
     3. Commit your changes (git commit -m 'Add some feature').
+
     4. Push to the branch (git push origin feature/feature-name).
+
     5. Open a Pull Request.
 
 ---
