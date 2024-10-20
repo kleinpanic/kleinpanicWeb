@@ -38,22 +38,22 @@ To run this project locally, you'll need:
     npm install 
     ```
 4. **create an .env file**
+> this is for the contact section, and some email features. This should be your email as this is designed to inform yourself about contact attemps.
     ```
     EMAIL_ADDDRESS=
     EMAIL_PASSWORD=
     ```
-5. Run the development server
+6. Run the development server
     ```bash
     npm run start
     ```
-6. Acces the Website
+7. Acces the Website
     ```bash
     http://localhost:port
     ```
 ## Folder Structure
 
 ```plaintext
-
 kleinpanic-website/
 │
 ├── public/           # Static files (CSS, images, etc.)
