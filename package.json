@@ -1,0 +1,30 @@
+{
+  "name": "KleinPanic",
+  "version": "1.0.0",
+  "description": "Your project description",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "csurf": "^1.11.0",
+    "ejs": "^3.1.10",
+    "envdot": "^0.0.3",
+    "express": "^4.17.1",
+    "express-mongo-sanitize": "^2.0.0",
+    "express-rate-limit": "^5.2.6",
+    "front-matter": "^4.0.2",
+    "helmet": "^4.4.1",
+    "marked": "^14.1.2",
+    "nodemailer": "^6.9.1",
+    "package.json": "^2.0.1",
+    "rss": "^1.2.2",
+    "xss-clean": "^0.1.0"
+  }
+}
+

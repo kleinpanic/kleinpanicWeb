@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+      position: relative;
+    }
+    
+    /* ASCII art */
+    .ascii-art-left, .ascii-art-right {
+      position: fixed;
+      opacity: 0.15;
+      font-size: 12px; /* Smaller font size for better scaling */
+      white-space: pre-wrap;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* Position the ASCII art */
+    .ascii-art-left {
+      left: 0;
+      top: 0;
+      transform: scale(1.0); 
+    }
+
+    .ascii-art-right {
+      right: 0;
+      top: 0;
+      transform: scale(1.0); 
+    }    
+
+    /* ASCII Art Title */
+    .ascii-header, .ascii-table-wrapper {
+      font-size: 14px;
+      background-color: rgba(255, 255, 255, 0.05); /* Apply the same grey transparent background */
+      color: transparent;
+      animation: gradient-animation 6s ease infinite;
+      text-align: center;
+      margin-bottom: 20px;
+      cursor: pointer;
+      padding: 20px; /* Add padding to match other sections */
+      border-radius: 8px; /* Add rounded corners */
+      box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2); /* Add box-shadow for consistency */
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    
+    .ascii-header:hover {
+      background-color: rgba(255, 255, 255, 0.1); /* Slightly brighter grey on hover */
+      box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3); /* Enhance the shadow on hover */
+      transform: scale(1.01); /* Add a slight zoom effect */
+    }
+
+    .ascii-header pre {
+      font-size: 14px;
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: gradient-animation 6s ease infinite;
+      cursor: pointer;
+    }
+
+    .ascii-header pre:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+    .ascii-table-wrapper:hover {
+      box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+      transform: scale(1.01);
+    }
+
+    .ascii-header a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    @keyframes gradient-animation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .ascii-line {
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    }
+
+    /* Blog content styling */
+    .post-container {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 5px;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+      line-height: 1.6;
+      font-size: 16px;
+      height: auto; /* Make height dynamic */
+      width: 100%; /* Ensure the container takes the full width */
+      box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2); /* Match box-shadow for consistency */
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    
+    .post-content {
+      color: #ccc;
+      white-space: pre-wrap;
+    }
+
+    /* Style images inside the blog post */
+    .post-container img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 10px auto; /* Center images */
+    }
+
+    /* ASCII-styled box around the content */
+    .ascii-box {
+      font-size: 16px;
+      color: #f0f0f0;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px; /* Ensure enough padding for proper spacing */
+      border-radius: 5px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      margin-bottom: 20px;
+      white-space: pre;
+      width: 100%;
+      height: auto; /* Dynamic height */
+      box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2); /* Add shadow */
+
+      /* Flexbox to center content */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+      /* Centering text */
+      text-align: center; /* Horizontally center the text */
+    }
+
+    .ascii-box h1 {
+      font-size: 2em; /* Adjust the size for emphasis */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+      text-align: center; /* Ensure it's centered horizontally */
+      color: #ff4081; 
+    }
+
+    .ascii-box p {
+      font-size: 1.2em; /* Slightly smaller for the published date */
+      margin: 10px 0 0 0; /* Add margin only above the paragraph */
+      text-align: center; /* Ensure it's centered horizontally */
+      color: #ffaa00; 
+    }
+    
+    .ascii-box:hover, .post-container:hover {
+      background-color: rgba(255, 255, 255, 0.1); /* Slightly brighter grey on hover */
+      box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3); /* Enhance shadow on hover */
+      transform: scale(1.01);
+    }
+
+    .post-content {
+      color: #ccc;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <!-- ASCII Art Background -->
+  <div class="ascii-art-left">
+    <pre>
+
+
+                         @@@@@@                                     @@@@@                           
+                        @@@@@@@@@@                              @@@@@@@@@@                          
+                        @@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@                          
+                        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                          
+                        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                          
+                        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                          
+                        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                          
+                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                        
+                      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                       
+                     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                      
+                     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                     
+                    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                     
+                    @@@@@@@@@@@@@@@           #@@@@@@            @@@@@@@@@@@@@@                     
+                    @@@@@@@@@@@                                     @@@@@@@@@@@                     
+                    @@@@@@@@@+                                        @@@@@@@@@                     
+                    @@@@@@@@                                           @@@@@@@@                     
+                    @@@@@@@@                                            @@@@@@@                     
+                    @@@@@@@                                             @@@@@@@                     
+                     @@@@@@                                             @@@@@@@                     
+      @@@@@          @@@@@@@                                            @@@@@@          @@@@@@      
+                   @@@@@@@@@                                           @@@@@@@@@@                   
+     @@                @@@@@@                                          @@@@@                 @@     
+                         @@@@@:                                       @@@@@                         
+                           @@@@@@                                   @@@@@                           
+                              @@@@@@@.                         .@@@@@@                              
+                  @@ @            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                  
+                   @@@ =                 @@@@@@@@@@@@@@@@@@                                         
+                     @@+ @              @@@@@@@@@@@@@@@@@@@@                                        
+                      @@@ @            @@@@@@@@@@@@@@@@@@@@@@                                       
+                       @@@ @@         @@@@@@@@@@@@@@@@@@@@@@@@                                      
+                        @@@@@@  @  @ @@@@@@ @@@@@  @@@@@@@@@@@                                      
+                          @@@@@@@@@@@@@@@@@ @@@@@  @@@@@ @@@@@                                      
+                            @@@@@@@@@@@@@@@ @@@@@  @@@@@ @@@@@                                      
+                                      @@@@@ @@@@@  @@@@@ @@@@@                                      
+                                      @@@@@ @@@@@  @@@@@ @@@@@                                      
+                                      @@@@@ @@@@@  @@@@@ @@@@@                                      
+                                      @@@@@ @@@@@  @@@@@ @@@@@                                      
+                                      @@@@@ @@@@@  @@@@@ @@@@@                                      
+                                     @@@@@  @@@@@  @@@@@ @@@@@:                                     
+                          .        #@@@@@   @@@@@  @@@@@  @@@@@@                                    
+                                   @@      @@@@     @@@@@     +@@                                   
+                                          @@@          @@@                                          
+                                                                                                    
+                                                                                                    
+
+
+    </pre>
+  </div>
+  <div class="ascii-art-right">
+    <pre>
+
+
+                                      @@@                                                           
+                                   @####@                                                           
+                                @#####@                            ###@                             
+                              @#####%                               ####@                           
+                            @######%                                @#####@                         
+                          @########@       @@@@@@@                   @#####@                        
+                         @#########@  @################@@            @######@                       
+                         ##################################@         @#######@                      
+                        @#######@########%%####@#############@     @#########@                      
+                        @#####@#################%##############%##############                      
+                        @####@##@   @####@  @####@###########################%                      
+                         %##%#@     @##@     %###############################@                      
+                         @#@#@     @#@        ##############################@                       
+                         @@#@      #@         @############################%                        
+                         @#@  .   @%          @###########################@                         
+                         ## @ @@ @#. @@@@     ##########################@                           
+                        @#@ @ @@ #@ @ :@@    @########################@                             
+                       @##% @@@ @#@@@@@@@    ######################@                                
+                      @####@   %##@@@@@@:   @#####################@                                 
+                     %######@@@####@.@@   *#######################@                                 
+                    @#####@##########%@@##########################@                                 
+            @:@     @#####@#######################################                                  
+             @::::@ @######@#########%###########################@                                  
+       ::@    @:@:*  @##########################################@                                   
+        :::::@    ::@ @####@@##################################@                                    
+@@       ::::@    @:@   @%###@################%@@@############@                                     
+ @::@@   @  @:::@@::@       @##@############@%##############@                                       
+  @::::@      @::::@           @##@@@%@@@@################@                                         
+   @:::@     @:::::::@@######@    @######################@                                          
+     @:::::::::@@ @:::########@      ####################                                           
+         @@@        @-@######%       ####################@                                          
+                    #######@####@@@@######################@                                         
+                   @########%####@###%@%###################@                                        
+                   @#############@#########@################                                        
+                     @@@@@######@#############@@@@@#########@                                       
+                       @######@###@#########################@                                       
+                            @##@@###########################@                                       
+                              @#############################                                        
+                               @###########################                                         
+                               @@########################@#                                         
+                               ###@#################@@#####@                                        
+                              @######@@#####@@#%+::::@######                                        
+                               ###################@::::-%###@                                       
+                               @####################%-:::@###@                                      
+                                @######################@@#####%                                     
+                                 @@#############################@                                   
+                                 @****@@###@***@######@*@#########@                                 
+                                  @*******#******%*******@@##########@                              
+                                 @********@**+---#***@..%*@ @############@@                         
+                          @@@@*=-=******@@***+---***%...@**     @##############@@@                  
+            @@          #*******=-*@*--+*****@@******@@@***@         @@################%@@          
+         @@              @           =#@@******************@@               @@@%##############@     
+              =@@@@@@@ %               -***************#@.  @                           @@@######@  
+         @             .@               @********#@@       @                         @       @#####@
+             @@@@@@            .:+%@%*-.               @@                         @###        @####%
+                        @                        @@@                           @######@    @######@ 
+                                @@@@@@@@@                                   @###################@   
+                                                                        @@##############@@@@        
+                                                                     @##%%%@@@@@@@@@@@@@@           
+                                                                     
+                                                                     
+    </pre>
+  </div>  
+    
+
+  <!-- Clickable ASCII Art Title for the Blog Post -->
+  <div class="ascii-header">
+    <a href="/blog/">
+      <pre>
+  _______ _           _  ___      _        ____  _             
+ |__   __| |         | |/ / |    (_)      |  _ \| |            
+    | |  | |__   ___ | ' /| | ___ _ _ __  | |_) | | ___   __ _ 
+    | |  | '_ \ / _ \|  < | |/ _ \ | '_ \ |  _ <| |/ _ \ / _` |
+    | |  | | | |  __/| . \| |  __/ | | | || |_) | | (_) | (_| |
+    |_|  |_| |_|\___||_|\_\_|\___|_|_| |_||____/|_|\___/ \__, |
+                                                          __/ |
+                                                         |___/
+      </pre>
+    </a>
+  </div>
+
+  <!-- ASCII Separator Line -->
+  <hr class="ascii-line">
+
+  <!-- Blog Post Title in ASCII-styled box -->
+  <div class="ascii-box">
+    <h1><%= title %></h1>
+    <p>Published on <%= date %></p>
+  </div>
+  
+  <!-- ASCII Separator Line -->
+  <hr class="ascii-line">
+
+  <!-- ASCII-styled content -->
+  <div class="post-container">
+    <div class="post-content">
+      <%- content %> <!-- Use unescaped tag to prevent entities from rendering -->
+    </div>
+  </div>
+  
+  <!-- ASCII Separator Line -->
+  <hr class="ascii-line">
+  
+</body>
+</html>

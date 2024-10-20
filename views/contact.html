@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Kleinpanic</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+      position: relative;
+    }
+    
+    /* ASCII art */
+    .ascii-art-left, .ascii-art-right {
+      position: fixed;
+      opacity: 0.15;
+      font-size: 12px; /* Smaller font size for better scaling */
+      white-space: pre-wrap;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* Position the ASCII art */
+    .ascii-art-left {
+      left: 0;
+      top: 0;
+      transform: scale(1.0); 
+    }
+
+    .ascii-art-right {
+      right: 0;
+      top: 0;
+      transform: scale(1.0); 
+    }
+
+    .ascii-header, .ascii-table, .contact-text-container, .form-container {
+      z-index: 10;
+      text-align: center;
+    }
+
+    .ascii-header pre {
+      font-size: 14px;
+      background: linear-gradient(135deg, #ff4081, #ff8c00, #ffd700, #00fa9a, #1e90ff, #ff4081);
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: gradient-animation 6s ease infinite;
+      cursor: pointer;
+    }
+
+    .ascii-header pre:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+    @keyframes gradient-animation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .ascii-table pre {
+      font-size: 16px;
+      color: #f0f0f0;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .ascii-table:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      transform: scale(1.01);
+      box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    }
+
+    a {
+      color: #1e90ff;
+      text-decoration: none;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    a:hover {
+      color: #ff4081;
+      transform: scale(1.1);
+    }
+
+    .contact-text-container {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 5px;
+      max-width: 800px;
+      margin: 20px auto;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact-text-container:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(255, 255, 255, 0.3);
+    }
+
+    .contact-text {
+      font-size: 16px;
+    }
+
+    .form-container {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 5px;
+      max-width: 800px;
+      margin: 20px auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .ascii-form-table pre {
+      white-space: pre; /* Ensure that text wraps within the table */
+      margin: 0;
+      padding: 0;
+      overflow-wrap: hidden; /* Prevent overflow of long words or text */
+      width: 100%; /* Make sure the pre tags don't overflow */
+    }
+    
+    .ascii-form-table {
+      font-size: 16px;
+      color: #f0f0f0;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      margin-bottom: 20px;
+      display: inline-block; 
+      width: 90%;
+      max-width: 600px;
+    }
+    
+    .ascii-form-table input {
+      height: 40px; /* Set a consistent height for input fields */
+    }
+
+    .ascii-form-table textarea {
+      height: 100px; /* Set a consistent height for the textarea */
+      resize: vertical; /* Allow vertical resizing but not horizontal */
+    }
+
+    .form-container form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .form-container input, .form-container textarea {
+      background-color: rgba(0, 0, 0, 0.8);
+      border: 1px solid #fff;
+      padding: 10px;
+      margin: 10px 0;
+      color: #fff;
+      border-radius: 5px;
+      font-family: 'Courier New', monospace;
+      width: 80%;
+      /* max-width: 600px; */
+      box-sizing: border-box;
+    }
+
+    .form-container button {
+      background-color: #1e90ff;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      max-width: 200px;
+    }
+
+    .form-container button:hover {
+      background-color: #ff4081;
+    }
+    
+    .ascii-line {
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    }
+  </style>
+</head>
+<body>
+  <!-- ASCII Art Background -->
+  <div class="ascii-art-left">
+    <pre>
+
+                       ..........:-=+****+++++++******==-....... .                                  
+                       .....=++++++*+++++++++++**++*++****+**:.. ..                                 
+                      ...:++++++++++++++++++++++++*************=....                                
+                      ..-+++++++==++++++++++++++*****************:..                                
+                   ....:+++++=......++*+++++++********************:....                             
+                   ....-+++++........+*+++++***********************....                             
+                   ....-+++++........*++++*************************....                             
+                   ....-++++++.....:++*+***************************....                             
+                   ....-+++++++*+*+*+******************************....                             
+                   ....=+++++++++++++******************************....                             
+                   ....=++++++++++*********************************....                             
+            .................................=*********************............                     
+    .........................................+*********************....................             
+........:=+++++++++++++++++++++************************************...:::::...::::.....             
+......=+++++++++++++++++++++***************************************...:::::::::::::::.....          
+....=++++++++++++++++++++++****************************************...::::::::::::::::....          
+...++++++++++++++++++++++++****************************************...:::::::::::::::::...          
+..=+++++++++++++++++++++++*****************************************...::::::::::::::::::..          
+.:+++++++++++++++++++++********************************************...:::::::::::::::::::.          
+.=+++++++++++++++++++++*******************************************+...:::::::::::::::::::.....      
+.+++++++++++++++++++**********************************************...:::::::::::::::::::::....      
+-+++++++++++++++*************************************************....:::::::::::::::::::::....      
+=+++++++++++++++**********************************************#:...:::::::::::::::::::::::....      
++++++++++++++++*******************************************#*-....:::::::::::::::::::::::::....      
++++++++++++++***************+-:.................................::::::::::::::::::::::::::....      
+++++++++++++*************+:................................::::::::::::::::::::::::::::::::...      
+++*++++++++*************:....:::.:.:::::::::::::::::::::::::::::::::::::::::::::::::::::::....      
+=++++++++*************+....:::::..::::::::::::::::::::::::::::::::::::::::::::::::::::::::....      
+:**+++++*************+....::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::....      
+.++++****************....:.:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::....      
+.-*+****************+...:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.          
+..+*****************+...::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::..          
+..-*****************+...::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::..          
+...-****************+...:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::...          
+....-+**************+...::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::....          
+    ..=*************+...::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::...             
+    .....-=+********+...:::::::::::::::::::::::::::::::::::::::::::::::::::::::::......             
+     ...................:::::::::::::::::::::..........................................             
+            ............:::::::::::::::::::::::::::::::::::::::::::............                     
+               .........:::::::::::::::::::::::::::::::::::::::::::....                             
+            ....   .....:::::::::::::::::::::::::::::::::::::::::::....                             
+                   .....::::::::::::::::::::::::::::::::...::::::::....                             
+                   .....::::::::::::::::::::::::::::::.......::::::....                             
+                   .....:::::::::::::::::::::::::::::.... ....:::::....                             
+                   .....::::::::::::::::::::::::::::::... ...::::::....                             
+                   .. ...::::::::::::::::::::::::::::::.....::::::.. ..                             
+                   .. ....::::::::::::::::::::::::::::::::::::::.... ..                             
+                       ......:::::::::::::::::::::::::::::::::.....                                 
+                       ..........:::::::::::::::::::::::::.........                                 
+                               .........::::::::::.........                                         
+                                 ..........................           
+    </pre>
+  </div>
+  <div class="ascii-art-right">
+    <pre>
+                                                                                                    
+                                                                                                    
+                ..:--.....                                                                          
+              ............. .                                                                       
+           ...... ....:++++++.       .@@@ @@@@@@@@    .@@@@@@@@                                     
+         ==:.........=++++++++:      @@@@@   @@:..@@@@...%@@. .                                     
+       .+++++++++++++++++++++++-.   =@@ @@.  @@:.@@*#@.  %@@.                                       
+       .=:...........:=+++++++++.   @@@%@@@. @@:.@@@@#@@ %@@.                                       
+      .............. ...:-=++++++  @@@@@@@@# @@:.@@..@@@.%@@.                                       
+      .                ...........:@@.   %@@.@@:. -@@@.-@%@@.                                       
+      ...................:-------  ==-.     = =   =       ..                       ..               
+       .+++=:.....-+++++++++++++.. .  @ +@%.@ @   @   .@@...@%..@@..:%.@@ @@.@@. @@...@@. @@.       
+       .+++++++++++++++++++++++=.. : .@ @@@.@ @   @   .@@%.. ..@  @ ...@@ . @  @ @...@@@@ @@.       
+        .=++++++++++++++++++++:    @@@..@@@ @ @   @@@@%@@@.#@@ -@@.   @@%@.@ @@= @....@@..@@*.      
+         ..++++++++++++++++++.                                                                      
+            ..................                                                                      
+              ..:--.. ......                                                                      
+                                                                                                    
+                                                                                                    
+    </pre>
+  </div>
+  <!-- ASCII Art Header, clickable -->
+  <a href="/">
+    <div class="ascii-header">
+        <pre>
+  _  ___      _         _____            _             _   
+ | |/ / |    (_)       / ____|          | |           | |  
+ | ' /| | ___ _ _ __  | |     ___  _ __ | |_ __ _  ___| |_ 
+ |  < | |/ _ \ | '_ \ | |    / _ \| '_ \| __/ _` |/ __| __|
+ | . \| |  __/ | | | || |___| (_) | | | | || (_| | (__| |_ 
+ |_|\_\_|\___|_|_| |_| \_____\___/|_| |_|\__\__,_|\___|\__|
+   ___     _   ___    _____            _    
+  / __|___| |_|_ _|_ |_   _|__ _  _ __| |_  
+ | (_ / -_)  _|| || ' \| |/ _ \ || / _| ' \ 
+  \___\___|\__|___|_||_|_|\___/\_,_\__|_||_|
+        </pre>
+    </div>
+  </a>
+  
+  <!-- Separator Line -->
+  <hr class="ascii-line">
+  
+  <!-- ASCII Art Table Section with Clickable Links and Descriptions -->
+  <div class="ascii-table">
+    <pre>
+        + ---------- + ----------------------------------- + ------------------------------------------------------ +
+        | <a href="https://github.com/kleinpanic" target="_blank">GitHub</a>     | <a href="https://github.com/kleinpanic" target="_blank">https://github.com/kleinpanic</a>       | All my open source projects listed with install curl!  |
+        | <a href="https://www.youtube.com/@KleinPanic" target="_blank">YouTube</a>    | <a href="https://www.youtube.com/@KleinPanic" target="_blank">https://www.youtube.com/@KleinPanic</a> | Watch videos I made about Linux and other stuff!       |
+        | <a href="mailto:kleinpanic@gmail.com">Email Me</a>   | <a href="mailto:kleinpanic@gmail.com">Email me directly</a>                   | Email me directly about whatever you want!             |
+        + ---------- + ----------------------------------- + ------------------------------------------------------ +
+    </pre>
+  </div>
+  
+  <!-- Separator Line -->
+  <hr class="ascii-line">
+
+  <!-- Contact Description Text -->
+  <div class="contact-text-container">
+    <p class="contact-text">+ ----------------------------------------------------------------------- +</p>
+    <p class="contact-text">Hello, My Pseudonym is Klein (Panic). It's a spoof off Kernel Panic. I am a Linux Enthusiast, and a Debian-enjoyer. I love hobby-coding and making projects for Linux systems that better improve my workflow or give me real-world utilities. If you notice or experience any issues with my open source projects, please feel free to email me with a description of the issue or open a GitHub issue publicly.</p>
+    <!-- <p class="contact-text">93 / ΤΚΦ</p> -->
+    <p class="contact-text">+ ----------------------------------------------------------------------- +</p>
+  </div>
+  
+  <!-- Separator Line -->
+  <hr class="ascii-line">
+
+  <!-- Simple Contact Form -->
+  <div class="form-container">
+    <h3>Contact Me Directly</h3>
+    <div class="ascii-form-table">
+      <pre>
++ ------------------------------------------------------- +
+      <input type="text" placeholder="Your Name" required>      
++ ------------------------------------------------------- +
+      </pre>
+    </div>
+    
+    <div class="ascii-form-table">
+      <pre>
++ ------------------------------------------------------- +
+      <input type="email" placeholder="Your Email" required>                
++ ------------------------------------------------------- +
+      </pre>
+    </div>
+    
+    <div class="ascii-form-table">
+      <pre>
++ ------------------------------------------------------- +
+      <textarea rows="1" placeholder="Your Message"></textarea>            
++ ------------------------------------------------------- +
+      </pre>
+    </div>
+    
+    <button type="submit">Send Message</button>
+  </div>
+  <script src="/js/contact.js" defer></script>
+  <!-- Separator Line -->
+  <hr class="ascii-line">
+</body>
+</html>

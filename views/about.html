@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Kleinpanic</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    
+    /* ASCII art */
+    .ascii-art-left, .ascii-art-right {
+      position: fixed;
+      opacity: 0.15;
+      font-size: 12px; /* Smaller font size for better scaling */
+      white-space: pre-wrap;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* Position the ASCII art */
+    .ascii-art-left {
+      left: 0;
+      top: 0;
+      transform: scale(1.0); 
+    }
+
+    .ascii-art-right {
+      right: 0;
+      top: 0;
+      transform: scale(1.0); 
+    }
+
+    h2, h3 {
+      color: #ff4081;
+    }
+
+    .ascii-header pre {
+      font-size: 14px;
+      background: linear-gradient(135deg, #ff4081, #ff8c00, #ffd700, #00fa9a, #1e90ff, #ff4081);
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: gradient-animation 6s ease infinite;
+      cursor: pointer;
+    }
+
+    .ascii-header pre:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+    @keyframes gradient-animation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .ascii-table pre {
+      font-size: 16px;
+      color: #f0f0f0;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      max-width: 100%;
+    }
+
+    .ascii-banner pre {
+      font-size: 16px;
+      color: #f0f0f0;
+    }
+
+    a {
+      color: #1e90ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #ff4081;
+    }
+
+    .ascii-line {
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    }
+    
+    .ascii-table:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      transform: scale(1.01);
+      box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <!-- ASCII Art Background -->
+  <div class="ascii-art-left">
+    <pre>
+                                                                                                    
+                                                                                                    
+                                            .=@%%%%%%*.                                             
+                                         .+%%*       -%%#.                                          
+                                      .+%%+             -%%#:                                       
+                                   .+%%+                   -%%%:                                    
+                                .*%%=.                        :#%#:                                 
+                             .*%%=                               :#%#-                              
+                          .#%@-                                     :#%%-                           
+                       .#%%-                                           :#%%-                        
+                    .#%%:.                                                .#%%=                     
+                  +%%:                                                       .#%%.                  
+                .%%                                                             *%=                 
+               .%%                                                            ...=%-                
+               +%.                                                         .+%%%%%%#                
+               *%.                                                      .=%%%%%%%%%%.               
+               *%.                                                    =%%%%%%%%%%%%%.               
+               *%.                                                .=%%%%%%%%%%%%%%%%.               
+               *%.                                              -%%%%%%%%%%%%%%%%%%%.               
+               *%.                                           -%%%%%%%%%%%%%%%%%%%%%%.               
+               *%.                                        :%%%%%%%%%%%%%%%%%%%%%%%%%.               
+               *%.                                     :%%%%%%%%%%%%%%%%%%%%%%%%%%%%.               
+               *%.                                  .%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%.               
+               *%.                                :%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%.               
+               *%.                               +%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%.               
+               *%.                               %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%.               
+               *%.                               %%%%%%%%%  %%%%%%%%%%%%%%%%%%%%%%%%.               
+               *%.                               %%%%%%%%%    +%%%%%%%%%%%%%%%%%%%%%.               
+               *%.                               %%%%%%%+  :++%%%%%%%%%%%%%%%%%%%%%%.               
+               *%.                               %%%%%%* .%%%%%%%%%%%%%%%%%%%%%%%%%%.               
+               *%.                               %%%%%%. .%@%%%%%%%%%%%%%%%%%%%%%%%%.               
+               *%.                               %%%%%%:      :%%%%%%%%%%%%%%%%%%%%%.               
+               +%.                               %%%%%%%#=-:  .%%%%%%%%%%%%%%%%%%%%%                
+               .%#                               %%%%%%%%%%%+ .%%%%%%%%%+%%%%%%%%%%=                
+                -%%                              %%%%%%%%%%%  #%%%%%#+++#%%%%%%%%%*                 
+                  @%#.                           %%%%%%*    .%%%%%+++#%%%%%%%%%%%.                  
+                    +%%#.                        %%%%%%. .  #%%%%%#%%%%%%%%%%%%.                    
+                       =%%%:                     %%%%%%%%% :%%%%%%%%%%%%%%%#.                       
+                          =%%%:                  %%%%%%%%%%%%%%%%%%%%%%%*.                          
+                             =%%%-               %%%%%%%%%%%%%%%%%%%%*                              
+                                -%%%-            %%%%%%%%%%%%%%%%%+.                                
+                                   -%%%-         %%%%%%%%%%%%%%=.                                   
+                                      :%%%-      %%%%%%%%%%%=.                                      
+                                         :%%%=   -%%%%%%%-                                          
+                                            .%%%%%%%%@-.                                            
+                                                                                                    
+                                                                                                    
+    </pre>
+  </div>
+  <div class="ascii-art-right">
+    <pre> 
+                @@@@@@%#%@@@@@@.                                          :@@@@@@@=                 
+           -@@      .    :@#     @@                                   @@              +@-           
+        *@:    @@@@@@@@@@@ @@% #@.  @@@@@                          @@  @@@@@@@@@@@@@      @+        
+      @@    :*@@@@@%      ..           @:                       @    .            @@@@@@    @+      
+    .@    @@@@@+   =@@*        :+##++                             +@@@@@@#.    :@@.   @@@@@   @     
+   @#   @@@@@.  .@.                                                                 @  +@@@@#  %#   
+  @.   @@@@@   @                                                                      @  @@@@.  .@  
+ +:   .@@@@. .@                    -@+        %@-        *@.      +@.                  @  @@@@   =- 
+ @    @@@@.  @                   @       .-:.     @    @=    .:.      @                 @  @@@@   @ 
+@     @@@@@ @                  @.   -@@@@@@@@@@@@   @@@+@@@:@@@@@@@@.   @                :-@@@.    :
+@    @@@@% @                 @#   @@@@@@@@@@@@@@@@@     @@ %@-@@@@@@@@%  @               @ .@@@@   @
+@    %@@@% @                @   @@@@@@@@@@@@@@@@@@@@     @.  #@@@@@@@@@@.  @             @ @@@@    @
+@    @@@@@ @              @.  @@@@@@@@@@@@@@@@@@@@@@     @    @.@@@@@@@@@@  @            @ @@@@@   @
+@     @@@  %:           #@  .@@@@@@@@@@@@@@@@@@@@-  @      . %.@@@@@@@@@@@@  :=          % @@@.    @
+@    %@@@@@ @          @   @@@@@@@@@@-              =%     @.     @@ -@@@@@@@  @        @ .@@@@%   @
+=.    -@@@:  @@      @.  @@@@@.            @           %@* *      %.      @@@@.  @    .@   @@@     @
+ @    @@@@@@@  .@@@#  .@@@@           @@@@@@      .@@=     -@   @@. @       @@@@#       :@@@@@@   @ 
+ *=    @@@@@@      +@@@@@            @. @@@               =:   @@.   @       @@@@@@% :@@@@@@@@   *= 
+  @.  @@@@@@@@@@@=@@@@@+           @@.  @   .@.  ::   +       @@@  . @        @@@@@@@@@@@@@@@   =%  
+   @:  .@@@@@@@@@@@@@@:           @               @    @      @@    .%         @@@@@@@@@@@@    @=   
+    .@    @ @@@@@@@@@*                     @@@@@@@@@    #     -@@@@@@@         .@@@@@@@ @  .  @     
+      @.    @..@.@@@@                .     @  @@@@       .     %@@@@-..         =@@#@ @     @@      
+        @=       :#@                %       @. *%  #             @. *@            @@      @#        
+          #@@     @.                @               -             @. @             @@@@@            
+               +@@@                @@                              @  @=            @               
+                 :@               @:@                               @.@ .@.         .@              
+                 @@             .@  @                                @+    .@@@        @            
+                @.             @%    @              .@%    =@-        @@          --.               
+               *@           -@#                     @.@@@     *@.       +@. :@                      
+              @@        :@@@ @                      @@           *#           #                     
+            @@     @@@@      @.                     *   @@@@@.                @                     
+            @ @@@@@  @@      @@            @                 .+              %@                     
+            :        @+      @@                .:  #          -             @@                      
+                     @:      -@@                 @                        @@                        
+                     @-        @                  @                   #@@@                          
+                     @@        @.                  @                      @+                        
+                     @@        .*@@                 @                      @                        
+                      @           @@@@               @@.         +@@@@@@@@@                         
+                      @@            @@                  -@@@@@+         @                           
+                       @           @@                                   @                           
+                        @           @@@:.                              :@                           
+                         @             @@@%               .@@@@@@@@@@@@-                            
+                          @               @    #          @@@.  @@                                  
+                           %%           @@% @@@.                @*                                  
+                             @          @@: @@@@@@               @                                  
+                               @         .@@@@@@@.           @   @-                                 
+                                 @          @@@ @@%         @.%-@*                                  
+                                              @. @@@@+   @@@@@@                                     
+                                           @@@*   @@@- @@@@@@@@                                     
+                                           @     @@@@@ @@@@@@@@@@  #                                
+                                                =@ @@@@@@@@@@@@@@@*@@                               
+                                                 =  @@@@@@@=@@@@@@@                                 
+                                                      @@  @@@  @@@@                                 
+
+    </pre>
+  </div>
+  <!-- ASCII Art Header, clickable -->
+  <a href="/">
+    <div class="ascii-header">
+        <pre>
+           _                 _    _  ___      _       
+     /\   | |               | |  | |/ / |    (_)      
+    /  \  | |__   ___  _   _| |_ | ' /| | ___ _ _ __  
+   / /\ \ | '_ \ / _ \| | | | __||  < | |/ _ \ | '_ \ 
+  / ____ \| |_) | (_) | |_| | |_ | . \| |  __/ | | | |
+ /_/    \_\_.__/ \___/ \__,_|\__||_|\_\_|\___|_|_| |_|
+  ___      _    _         _ _____ _        ___                      
+ | _ ) ___| |_ (_)_ _  __| |_   _| |_  ___/ __| __ _ _ ___ ___ _ _  
+ | _ \/ -_) ' \| | ' \/ _` | | | | ' \/ -_)__ \/ _| '_/ -_) -_) ' \ 
+ |___/\___|_||_|_|_||_\__,_| |_| |_||_\___|___/\__|_| \___\___|_||_|
+        </pre>
+    </div>
+  </a>
+  
+  <!-- Separator Line -->
+  <hr class="ascii-line">
+
+
+  <!-- ASCII Art Banner for sections -->
+  <div class="ascii-banner">
+    <pre>
++ ---------------- + ---------------- + ---------------- + ---------------- + ---------------- +
+|      <a href="#skills">Skills</a>      |    <a href="#education">Education</a>     |    <a href="#interests">Interests</a>     |    <a href="#experience">Experience</a>    |  <a href="#projects">Main-Projects</a>   |
++ ---------------- + ---------------- + ---------------- + ---------------- + ---------------- +
+    </pre>
+  </div>
+  
+  <!-- Separator Line -->
+  <hr class="ascii-line">
+  
+  <!-- Skills Section -->
+  <section id="skills">
+    <h3>Skills</h3>
+    <div class="ascii-table">
+      <pre>
++ ------------------------------ + --------------------------------------------------- +
+| Category                       | Skills                                              |
++ ------------------------------ + --------------------------------------------------- +
+| Programming Languages          | Python, JavaScript, C, C++, Java, Ruby, Go, Rust    |
+| Frontend Frameworks            | React, Vue.js, Angular, Svelte, Bootstrap           |
+| Backend Frameworks             | Django, Flask, Express, Node.js, Ruby on Rails      |
+| Databases                      | MySQL, PostgreSQL, MongoDB, SQLite, Redis           |
+| DevOps Tools                   | Docker, Kubernetes, Jenkins, Ansible, Terraform     |
+| Version Control                | Git, GitHub, GitLab, Bitbucket                      |
+| Cloud Platforms                | AWS, Google Cloud, Azure, Heroku, DigitalOcean      |
+| Mobile Development             | Flutter, React Native, Swift, Kotlin                |
+| Testing Frameworks             | Jest, Mocha, Cypress, PyTest, Selenium              |
+| CI/CD Tools                    | CircleCI, TravisCI, GitHub Actions, Jenkins         |
+| Operating Systems              | Linux/GNU Debian, macOS, Windows, GNU/Alpine,       |
+| Scripting Languages            | Bash, PowerShell, Perl                              |
+| Cybersecurity Tools            | Wireshark, Metasploit, Nmap, Burp Suite             |
+| APIs & Protocols               | REST, GraphQL, WebSocket, gRPC, SOAP                |
+| Containerization/Orchestration | Docker, Kubernetes, OpenShift                       |
+| Software & Tools               | Visual Studio Code, Vim, Neovim, IntelliJ IDEA      |
+| Machine Learning               | TensorFlow, PyTorch, Scikit-learn                   |
+| Data Science Tools             | Pandas, NumPy, Jupyter, Matplotlib                  |
+| Networking                     | TCP/IP, DNS, HTTP/HTTPS, FTP, SSH                   |
+| Project Management Tools       | Jira, Trello, Asana, Monday.com                     |
+| APIs                           | Google Maps API, Twitter API, Stripe API            |
++ ------------------------------ + --------------------------------------------------- +
+      </pre>
+    </div>
+  </section>
+
+  <!-- Separator Line -->
+  <hr class="ascii-line">
+
+  <!-- Education Section -->
+  <section id="education">
+    <h3>Education</h3>
+    <div class="ascii-table">
+      <pre>
++ ------------------------------------- + ----------------------------------------- + ------------------------------- +
+|    Degree / Certificatee              |               Institution                 |     Additional Information      |
++ ------------------------------------- + ----------------------------------------- + ------------------------------- +
+| High School Diploma                   | Palisades High School, Pennsylvania       |                                 |
+| Bachelor of Science Degree, Neuro     | Virginia Tech, Virginia                   |                                 |            
+|                                       |                                           |                                 |    
++ ------------------------------------- + ----------------------------------------- + ------------------------------- +
+
+
+      </pre>
+    </div>
+  </section>
+
+  <!-- Separator Line -->
+  <hr class="ascii-line">
+  
+  <!-- Interests Section -->
+  <section id="interests">
+    <h3>Interests</h3>
+    <div class="ascii-table">
+      <pre>
++--------------+------------+-----------+
+|  Interests   | Experience | Expertise |
++--------------+------------+-----------+
+| Coding       |            |           |
+| Skiing       |            |           |
+| Woodworiking |            |           |
+| Guitar       |            |           |
+| Robotics     |            |           |
+| Medicine     |            |           |
+| Neuoscience  |            |           |
++--------------+------------+-----------+
+      </pre>
+    </div>
+  </section>
+
+  <!-- Separator Line -->
+  <hr class="ascii-line">
+  
+    <!-- Work Experience Section -->
+  <section id="experience">
+    <h3>Work Experience</h3>
+    <div class="ascii-table">
+      <pre>
++ --------------------------- + ----------------------------- + -------------------- +
+| Job Title                   | Company                       | Duration             |
++ --------------------------- + ----------------------------- + -------------------- +
+| Linux Developer             | Freelance                     | 2 years              |
+| Research Assistant          | Virginia Tech Neuroscience Lab| 1 year               |
++ --------------------------- + ----------------------------- + -------------------- +
+      </pre>
+    </div>
+  </section>
+
+  <!-- Separator Line -->
+  <hr class="ascii-line">
+
+  <!-- Main Projects Section -->
+  <section id="projects">
+    <h3>Main Projects</h3>
+    <div class="ascii-table">
+      <pre>
++ ------------------------- + -------------------- + ---------------------------- + ----------------------- +
+| Name                      | Language & Framework  | Description                    | Link to Source           |
++ ------------------------- + -------------------- + ---------------------------- + ----------------------- +
+|                           |                      |                                |                         |
+|                           |                      |                                |                         |
+|                           |                      |                                |                         |
++ ------------------------- + -------------------- + ---------------------------- + ----------------------- +
+      </pre>
+    </div>
+  </section>
+  
+    <!-- Separator Line -->
+  <hr class="ascii-line">
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h3>Contact Me</h3>
+    <div class="ascii-table">
+      <a href="/contact">
+        <pre>
+    + ------------------------ +
+    | Reach out on the Contact |
+    | Page for more details!   |
+    + ------------------------ +
+        </pre>
+      </a>
+    </div>
+  </section>
+  
+  <!-- Separator Line -->
+  <hr class="ascii-line">
+</body>
+</html>

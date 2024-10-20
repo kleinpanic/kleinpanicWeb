@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monitor - Kleinpanic</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* ASCII header and subheader style */
+    .ascii-header, .ascii-subheader {
+      font-size: 14px;
+      background: linear-gradient(135deg, #ff4081, #ff8c00, #ffd700, #00fa9a, #1e90ff, #ff4081);
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: gradient-animation 6s ease infinite;
+      text-align: center;
+    }
+
+    /* Gradient animation */
+    @keyframes gradient-animation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* Separator line style */
+    .ascii-line {
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    }
+
+    /* Block of text for maintenance message */
+    .maintenance-message {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+      max-width: 800px;
+      margin: 20px auto;
+      font-size: 16px;
+    }
+
+    /* Styling for clickable anchor */
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    a:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+  <!-- ASCII Art Header as a clickable anchor -->
+  <a href="/" class="ascii-header">
+    <pre>
+   __  __             _ _              _  ___      _       
+  |  \/  |           (_) |            | |/ / |    (_)      
+  | \  / | ___  _ __  _| |_ ___  _ __ | ' /| | ___ _ _ __  
+  | |\/| |/ _ \| '_ \| | __/ _ \| '__||  < | |/ _ \ | '_ \ 
+  | |  | | (_) | | | | | || (_) | |   | . \| |  __/ | | | |
+  |_|  |_|\___/|_| |_|_|\__\___/|_|   |_|\_\_|\___|_|_| |_|
+                                                           
+    </pre>
+  </a>
+
+  <!-- ASCII Art Subheader -->
+  <div class="ascii-subheader">
+    <pre>
+  _ _   _               _            _         _                     _   _    _      _   
+ (_) |_( )___  _ _  ___| |_  __ __ _| |_  __ _| |_   _  _ ___ _  _  | |_| |_ (_)_ _ | |__
+ | |  _|/(_-< | ' \/ _ \  _| \ V  V / ' \/ _` |  _| | || / _ \ || | |  _| ' \| | ' \| / /
+ |_|\__| /__/ |_||_\___/\__|  \_/\_/|_||_\__,_|\__|  \_, \___/\_,_|  \__|_||_|_|_||_|_\_\
+                                                     |__/                               
+    </pre>
+  </div>
+
+  <!-- Separator Line -->
+  <hr class="ascii-line">
+
+  <!-- Maintenance Message -->
+  <div class="maintenance-message">
+    <p>This page is under maintenance and will be up soon.</p>
+  </div>
+</body>
+</html>

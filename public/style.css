@@ -1,0 +1,285 @@
+/* Body styling */
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  overflow-y: auto;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.9), #111);
+  scroll-behavior: smooth; /* Smooth scrolling for a better experience */
+}
+
+
+body .pink-text {
+  color: #ff4081 !important;
+}
+
+body .amber-text {
+  color: #ffaa00 !important;
+}
+
+/* Smooth transitions for all elements */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Centering the ASCII table and header */
+.ascii-table-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.ascii-table-wrapper {
+  width: 100%;
+  max-width: 1200px; /* Set a max width for the container */
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.15);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Add shadow and scale effect on hover */
+.ascii-table-wrapper:hover {
+  box-shadow: 0 12px 24px rgba(255, 255, 255, 0.3);
+  transform: scale(1.02);
+}
+
+/* ASCII header with gradient */
+.ascii-header pre {
+  text-align: center;
+  font-size: 16px;
+  white-space: pre;
+  background: linear-gradient(135deg, #ff4081, #ff8c00, #ffd700, #00fa9a, #1e90ff, #ff4081);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient-animation 6s ease infinite;
+  word-wrap: break-word; /* Ensure text doesn't overflow */
+}
+
+/* Gradient Animation */
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Title styling */
+h2 {
+  color: #ff4081;
+  font-size: 28px;
+  margin: 10px 0;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* ASCII table styling */
+.ascii-table {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px 0;
+  padding: 0;
+  font-size: 14px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensure the table remains inside the container */
+}
+
+/* Table rows and cells */
+.ascii-table pre {
+  font-size: 14px;
+  color: #f0f0f0;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 10px 15px;
+  border-radius: 8px;
+  line-height: 1.5;
+  text-align: left;
+  white-space: pre-wrap;
+}
+
+/* Even out columns in the table */
+.ascii-table td, .ascii-table th {
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: left;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+
+/* Adjust column widths */
+.ascii-table th:nth-child(1), .ascii-table td:nth-child(1) {
+  width: 25%;
+}
+
+.ascii-table th:nth-child(2), .ascii-table td:nth-child(2) {
+  width: 50%;
+}
+
+.ascii-table th:nth-child(3), .ascii-table td:nth-child(3) {
+  width: 25%;
+}
+
+/* Styling for clickable links */
+a.clickable-repo {
+  color: #1e90ff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+a.clickable-repo:hover {
+  color: #fff;
+  background-color: #ff4081;
+  border-radius: 5px;
+  padding: 2px 5px;
+}
+
+/* Install command style */
+.install-command {
+  font-family: monospace;
+  background-color: rgba(255, 64, 129, 0.1);
+  padding: 5px;
+  border-radius: 4px;
+  word-break: break-all;
+}
+
+/* Hover effect for table */
+.ascii-table pre:hover {
+  background-color: rgba(255, 64, 129, 0.2);
+  box-shadow: 0 6px 12px rgba(255, 64, 129, 0.2);
+}
+
+/* Profile circle inside the box with hover effect */
+.ascii-banner pre a {
+  color: inherit;
+  text-shadow: none;
+}
+
+.ascii-banner pre a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+/* Horizontal line separator */
+.ascii-line {
+  width: 80%;
+  margin: 20px auto;
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, rgba(255, 64, 129, 0), rgba(255, 64, 129, 1), rgba(255, 64, 129, 0));
+}
+
+/* Center the entire container */
+.ascii-header, .ascii-table, .ascii-banner {
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Hover effect for entire sections */
+.ascii-header:hover, .ascii-table:hover, .ascii-banner:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.3);
+}
+
+/* Buttons styling */
+button, input[type="submit"] {
+  background-color: #ff4081;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: #1e90ff;
+}
+
+/* Form fields style */
+input[type="text"], input[type="email"], textarea {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  margin: 10px 0;
+  color: #fff;
+  width: 100%;
+  max-width: 600px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/* Focus state for form fields */
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+  border-color: #ff4081;
+  box-shadow: 0 0 10px rgba(255, 64, 129, 0.5);
+  outline: none;
+}
+
+/* Table adjustments for smaller screens */
+@media (max-width: 768px) {
+  .ascii-table {
+    font-size: 12px;
+  }
+
+  .ascii-table th:nth-child(1), .ascii-table td:nth-child(1) {
+    width: 30%;
+  }
+
+  .ascii-table th:nth-child(2), .ascii-table td:nth-child(2) {
+    width: 45%;
+  }
+
+  .ascii-table th:nth-child(3), .ascii-table td:nth-child(3) {
+    width: 25%;
+  }
+
+  /* Hide ASCII art on smaller screens */
+  .ascii-art-background {
+    display: none;
+  }
+
+  button, input[type="submit"] {
+    font-size: 14px;
+  }
+}
+
+/* Larger screens adjustments */
+@media (min-width: 1024px) {
+  .ascii-table pre {
+    font-size: 14px;
+  }
+
+  button, input[type="submit"] {
+    font-size: 18px;
+  }
+}
+
+
+

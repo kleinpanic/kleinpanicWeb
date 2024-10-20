@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    /* Styling clickable project name */
+    .clickable-repo {
+      color: #1e90ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .clickable-repo:hover {
+      color: #ff4081;
+    }
+    
+    /* ASCII art */
+    .ascii-art-left, .ascii-art-right {
+      position: absolute;
+      opacity: 0.15;
+      font-size: 12px; /* Smaller font size for better scaling */
+      white-space: pre-wrap;
+      pointer-events: none;
+      z-index: 1;
+    }
+    
+    /* Position the ASCII art */
+    .ascii-art-left {
+      left: 0;
+      top: 0;
+      transform: scale(1.0);
+    }
+
+    .ascii-art-right {
+      right: 0;
+      top: 0;
+      transform: scale(1.0);
+    }
+
+    /* ASCII Table style */
+    .ascii-table {
+      width: 100%;
+      max-width: 1075px;
+      margin: 0 auto;
+      padding: 20px;
+      font-family: monospace;
+      text-align: left;
+      white-space: pre;
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      box-shadow: 0 6px 12px rgba(255, 255, 255, 0.15);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    /* Hover effect for the table */
+    .ascii-table:hover {
+      box-shadow: 0 12px 24px rgba(255, 255, 255, 0.3);
+      transform: scale(1.02);
+    }
+
+    /* General body styling */
+    body {
+      padding: 20px;
+      font-family: 'Courier New', monospace;
+      background: radial-gradient(circle, rgba(0, 0, 0, 0.9), #111);
+    }
+
+    /* Detailed install instructions section */
+    .install-instructions {
+      text-align: left;
+      margin: 20px auto;
+      max-width: 800px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      box-shadow: 0 6px 12px rgba(255, 255, 255, 0.15);
+      font-family: 'Courier New', monospace;
+    }
+
+    .install-instructions h2 {
+      text-align: center;
+      color: #ff4081;
+      margin-bottom: 20px;
+    }
+
+    .install-instructions p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+
+    .install-instructions pre {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 10px;
+      border-radius: 8px;
+      color: #1e90ff;
+      font-size: 1.1em;
+    }
+
+    .install-instructions ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .install-instructions ul li {
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    /* Title styling inside the table */
+    .ascii-table-header {
+      font-weight: bold;
+      color: #ff4081;
+      border-bottom: 2px solid #fff;
+    }
+
+    /* Clickable container styling */
+    .clickable-container {
+      cursor: pointer;
+      text-align: center;
+    }
+
+    /* Hover effect for clickable container */
+    .clickable-container:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+    
+    /* Separator line style */
+    .ascii-line {
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    }
+    
+  </style>
+</head>
+<body>
+  <!-- ASCII Art Header -->
+  <div class="ascii-header clickable-container">
+    <pre>
+ _  ___      _         _____           _           _       
+| |/ / |    (_)       |  __ \         (_)         | |      
+| ' /| | ___ _ _ __   | |__) | __ ___  _  ___  ___| |_ ___ 
+|  < | |/ _ \ | '_ \  |  ___/ '__/ _ \| |/ _ \/ __| __/ __|
+| . \| |  __/ | | | | | |   | | | (_) | |  __/ (__| |_\__ \
+|_|\_\_|\___|_|_| |_| |_|   |_|  \___/| |\___|\___|\__|___/
+                                     _/ |                  
+                                    |__/                   
+    </pre>
+  </div>
+  
+  <!-- Separator Line -->
+  <hr class="ascii-line">
+  
+  <!-- Title indicating that the install code uses curl -->
+  <div class="install-instructions">
+    <h2>How to Install Projects</h2>
+    <p>
+      To install any of the projects listed below, use the following command in your terminal. Make sure to replace <strong>X</strong> with the appropriate <em>repo_id</em> for the project you want to install:
+    </p>
+    <pre><code>curl https://kleinpanic.com/install.sh?repo_id=X | bash</code></pre>
+    <p>
+      This script will automatically clone the specified project repository from GitHub and run any installation commands associated with the project. If you encounter any issues, ensure you have <code>git</code> and <code>bash</code> installed on your system.
+    </p>
+  </div>
+  
+  <!-- Separator Line -->
+  <hr class="ascii-line">
+
+  <!-- ASCII Table Section with Projects -->
+  <pre class="ascii-table">
++ ------------------------ + --------------------------------------------------------------- + ------------------------------ +
+| <span class="ascii-table-header">Project Name             | Description                                                     | Install Command               </span> |
++ ------------------------ + --------------------------------------------------------------- + ------------------------------ +
+<span id="projects-table-content"></span>
++ ------------------------ + --------------------------------------------------------------- + ------------------------------ +
+  </pre>
+
+  <!-- External JavaScript Files -->
+  <script src="/js/projects.js"></script>
+  <script src="/js/clickableHeader.js"></script>
+
+  <!-- Separator Line -->
+  <hr class="ascii-line">
+
+</body>
+</html> 
