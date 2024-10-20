@@ -22,8 +22,6 @@ To run this project locally, you'll need:
 
 - [Node.js](https://nodejs.org/en/) (v14 or later)
 - [npm](https://www.npmjs.com/) (comes with Node.js)
-- [MongoDB](https://www.mongodb.com/) (optional: if you plan to use a database)
-- A valid email address for the sign-in feature.
 
 ### Installation
 
@@ -60,10 +58,9 @@ kleinpanic-website/
 │
 ├── public/           # Static files (CSS, images, etc.)
 ├── views/            # Frontend templates (ejs)
-├── routes/           # API and web routes
-├── models/           # Mongoose models
-├── controllers/      # Controllers for routes
-├── config/           # Configuration files (environment, database)
+├── routes/           # JS
+├── blog/             # Dir to contain blogs
+├── package.json      # NPM installs.
 ├── server.js         # Entry point for the server
 └── README.md         # Project documentation
 ```
