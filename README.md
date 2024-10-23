@@ -38,7 +38,8 @@ To run this project locally, you'll need:
     npm install 
     ```
 4. **create an .env file**
-> this is for the contact section, and some email features. This should be your email as this is designed to inform yourself about contact attemps.
+> this is for the contact section, and enables email notification features. This should be your email as this is designed to inform yourself about contact attemps.
+> Be warned: if using a gmail, you will need to setup an app password and use that instead of your own private email password.
     ```
     EMAIL_ADDDRESS=
     EMAIL_PASSWORD=
@@ -57,7 +58,7 @@ To run this project locally, you'll need:
 ## Folder Structure
 
 ```plaintext
-kleinpanic-website/
+kleinpanicWeb/
 │
 ├── public/           # Static files (CSS, images, etc.)
 ├── views/            # Frontend templates (ejs)
@@ -65,7 +66,12 @@ kleinpanic-website/
 ├── blog/             # Dir to contain blogs
 ├── package.json      # NPM installs.
 ├── server.js         # Entry point for the server
+├── .env              # Text file for containing secrets
+├── stderr.log        # Log file created for error logs
+├── package.json      # File for JS dependencies
+├── LICENSE           # MIT License
 └── README.md         # Project documentation
+
 ```
 
 ---
