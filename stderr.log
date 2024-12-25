@@ -1,0 +1,740 @@
+2024-10-07T22:11:26.277Z - Email sent successfully: 250 2.0.0 OK  1728339086 d9443c01a7336-20c13968ddasm43848995ad.214 - gsmtp
+Error: ENOENT: no such file or directory, scandir '/home/kleidigs/KleinPanic/blog'
+    at Object.readdirSync (node:fs:1525:3)
+    at getBlogPosts (/home/kleidigs/KleinPanic/routes/blog.js:12:20)
+    at /home/kleidigs/KleinPanic/routes/blog.js:24:17
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:280:10)
+Error: No default engine was specified and no extension was provided.
+    at new View (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/view.js:61:11)
+    at Function.render (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/application.js:587:12)
+    at ServerResponse.render (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/response.js:1049:7)
+    at /home/kleidigs/KleinPanic/routes/blog.js:25:7
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:346:12)
+Error: No default engine was specified and no extension was provided.
+    at new View (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/view.js:61:11)
+    at Function.render (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/application.js:587:12)
+    at ServerResponse.render (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/response.js:1049:7)
+    at /home/kleidigs/KleinPanic/routes/blog.js:25:7
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:346:12)
+TypeError: marked is not a function
+    at /home/kleidigs/KleinPanic/routes/blog.js:55:25
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:284:15
+    at param (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:280:10)
+TypeError: marked is not a function
+    at /home/kleidigs/KleinPanic/routes/blog.js:55:25
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:284:15
+    at param (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:280:10)
+TypeError: marked is not a function
+    at /home/kleidigs/KleinPanic/routes/blog.js:51:25
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:284:15
+    at param (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:280:10)
+TypeError: marked is not a function
+    at /home/kleidigs/KleinPanic/routes/blog.js:41:25
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:284:15
+    at param (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:280:10)
+TypeError: marked is not a function
+    at /home/kleidigs/KleinPanic/routes/blog.js:47:25
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:284:15
+    at param (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:280:10)
+TypeError: marked is not a function
+    at /home/kleidigs/KleinPanic/routes/blog.js:47:25
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:284:15
+    at param (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:280:10)
+TypeError: marked is not a function
+    at /home/kleidigs/KleinPanic/routes/blog.js:47:25
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:284:15
+    at param (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:280:10)
+Error: No default engine was specified and no extension was provided.
+    at new View (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/view.js:61:11)
+    at Function.render (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/application.js:587:12)
+    at ServerResponse.render (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/response.js:1049:7)
+    at /home/kleidigs/KleinPanic/routes/blog.js:48:9
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:284:15
+    at param (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:365:14)
+2024-10-08T21:50:26.690Z - Email sent successfully: 250 2.0.0 OK  1728424226 98e67ed59e1d1-2e2a55e0c58sm64649a91.10 - gsmtp
+Error: ENOENT: no such file or directory, stat '/home/kleidigs/KleinPanic/views/curl.html'
+/home/kleidigs/KleinPanic/server.js:149
+      const response = await axios.get('https://api.github.com/users/kleinpanic/repos');
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.4
+/home/kleidigs/KleinPanic/server.js:149
+      const response = await axios.get('https://api.github.com/users/kleinpanic/repos');
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.4
+/home/kleidigs/KleinPanic/server.js:149
+      const response = await axios.get('https://api.github.com/users/kleinpanic/repos');
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.4
+/home/kleidigs/KleinPanic/server.js:149
+      const response = await axios.get('https://api.github.com/users/kleinpanic/repos');
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.4
+/home/kleidigs/KleinPanic/server.js:149
+      const response = await axios.get('https://api.github.com/users/kleinpanic/repos');
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.4
+/home/kleidigs/KleinPanic/server.js:149
+      const response = await axios.get('https://api.github.com/users/kleinpanic/repos');
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.4
+/home/kleidigs/KleinPanic/server.js:149
+      const response = await axios.get('https://api.github.com/users/kleinpanic/repos');
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.4
+/home/kleidigs/KleinPanic/server.js:149
+      const response = await axios.get('https://api.github.com/users/kleinpanic/repos');
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.4
+/home/kleidigs/KleinPanic/server.js:149
+      const response = await axios.get('https://api.github.com/users/kleinpanic/repos');
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.4
+/home/kleidigs/KleinPanic/server.js:149
+      const response = await axios.get('https://api.github.com/users/kleinpanic/repos');
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.4
+/home/kleidigs/KleinPanic/server.js:149
+      const response = await axios.get('https://api.github.com/users/kleinpanic/repos');
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.4
+/home/kleidigs/KleinPanic/server.js:149
+      const response = await axios.get('https://api.github.com/users/kleinpanic/repos');
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.4
+/home/kleidigs/KleinPanic/server.js:149
+      const response = await axios.get('https://api.github.com/users/kleinpanic/repos');
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.4
+/home/kleidigs/KleinPanic/server.js:150
+      const response = await axios.get('https://api.github.com/users/kleinpanic/repos'); // Adjust 'kleinpanic' to your GitHub username
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.4
+/home/kleidigs/KleinPanic/server.js:150
+      const response = await axios.get('https://api.github.com/users/kleinpanic/repos'); // Adjust 'kleinpanic' to your GitHub username
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.4
+/home/kleidigs/KleinPanic/server.js:150
+      const response = await axios.get('https://api.github.com/users/kleinpanic/repos'); // Adjust 'kleinpanic' to your GitHub username
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.4
+/home/kleidigs/KleinPanic/server.js:150
+      const response = await axios.get('https://api.github.com/users/kleinpanic/repos'); // Adjust 'kleinpanic' to your GitHub username
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.4
+/home/kleidigs/KleinPanic/server.js:151
+      const response = await axios.get('https://api.github.com/users/kleinpanic/repos'); // Adjust 'kleinpanic' to your GitHub username
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.4
+/home/kleidigs/KleinPanic/server.js:151
+      const response = await axios.get('https://api.github.com/users/kleinpanic/repos'); // Adjust 'kleinpanic' to your GitHub username
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.4
+/home/kleidigs/KleinPanic/server.js:151
+      const response = await axios.get('https://api.github.com/users/kleinpanic/repos'); // Adjust 'kleinpanic' to your GitHub username
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.4
+/home/kleidigs/KleinPanic/server.js:151
+      const response = await axios.get('https://api.github.com/users/kleinpanic/repos'); // Adjust 'kleinpanic' to your GitHub username
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.4
+/home/kleidigs/KleinPanic/server.js:151
+      const response = await axios.get('https://api.github.com/users/kleinpanic/repos'); // Adjust 'kleinpanic' to your GitHub username
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.4
+/home/kleidigs/KleinPanic/server.js:151
+      const response = await axios.get('https://api.github.com/users/kleinpanic/repos'); // Adjust 'kleinpanic' to your GitHub username
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.4
+Error reading logo.txt: ReferenceError: fs is not defined
+    at getGradientTitle (/home/kleidigs/KleinPanic/server.js:152:18)
+    at /home/kleidigs/KleinPanic/server.js:217:3
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Error reading logo.txt: ReferenceError: fs is not defined
+    at getGradientTitle (/home/kleidigs/KleinPanic/server.js:152:18)
+    at /home/kleidigs/KleinPanic/server.js:217:3
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+/home/kleidigs/KleinPanic/server.js:150
+      const response = await axios.get('https://api.github.com/users/kleinpanic/repos'); 
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.4
+/home/kleidigs/KleinPanic/server.js:150
+      const response = await axios.get('https://api.github.com/users/kleinpanic/repos'); 
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.4
+/home/kleidigs/KleinPanic/server.js:164
+\x1b[90m+ ------------------------- + ------------------------------------ + -------------------- +
+^
+
+SyntaxError: Invalid or unexpected token
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.4
+/home/kleidigs/KleinPanic/server.js:164
+\x1b[90m+ ------------------------- + ------------------------------------ + -------------------- +
+^
+
+SyntaxError: Invalid or unexpected token
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.4
+/home/kleidigs/KleinPanic/server.js:164
+\x1b[90m+ ------------------------- + ------------------------------------ + -------------------- +
+^
+
+SyntaxError: Invalid or unexpected token
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.4
+/home/kleidigs/KleinPanic/server.js:164
+\x1b[90m+ ------------------------- + ------------------------------------ + -------------------- +
+^
+
+SyntaxError: Invalid or unexpected token
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.4
+Error: Failed to lookup view "post" in views directory "/home/kleidigs/KleinPanic/views"
+    at Function.render (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/response.js:1049:7)
+    at /home/kleidigs/KleinPanic/routes/blog.js:94:9
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:284:15
+    at param (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:376:14)
+Error: Failed to lookup view "post" in views directory "/home/kleidigs/KleinPanic/views"
+    at Function.render (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/response.js:1049:7)
+    at /home/kleidigs/KleinPanic/routes/blog.js:94:9
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:284:15
+    at param (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:376:14)
+Error: Failed to lookup view "post" in views directory "/home/kleidigs/KleinPanic/views"
+    at Function.render (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/response.js:1049:7)
+    at /home/kleidigs/KleinPanic/routes/blog.js:94:9
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:284:15
+    at param (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:376:14)
+Error: Failed to lookup view "post" in views directory "/home/kleidigs/KleinPanic/views"
+    at Function.render (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/response.js:1049:7)
+    at /home/kleidigs/KleinPanic/routes/blog.js:94:9
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:284:15
+    at param (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:376:14)
+Error: Failed to lookup view "post" in views directory "/home/kleidigs/KleinPanic/views"
+    at Function.render (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/response.js:1049:7)
+    at /home/kleidigs/KleinPanic/routes/blog.js:94:9
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:284:15
+    at param (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:376:14)
+Error: Failed to lookup view "post" in views directory "/home/kleidigs/KleinPanic/views"
+    at Function.render (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/application.js:597:17)
+    at ServerResponse.render (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/response.js:1049:7)
+    at /home/kleidigs/KleinPanic/routes/blog.js:94:9
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:284:15
+    at param (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:376:14)
+PayloadTooLargeError: request entity too large
+    at readStream (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/raw-body/index.js:163:17)
+    at getRawBody (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/raw-body/index.js:116:12)
+    at read (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/body-parser/lib/read.js:79:3)
+    at jsonParser (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/body-parser/lib/types/json.js:138:5)
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:328:13)
+    at /home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at /home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/xss-clean/lib/index.js:11:5
+PayloadTooLargeError: request entity too large
+    at readStream (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/raw-body/index.js:163:17)
+    at getRawBody (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/raw-body/index.js:116:12)
+    at read (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/body-parser/lib/read.js:79:3)
+    at jsonParser (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/body-parser/lib/types/json.js:138:5)
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:328:13)
+    at /home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at /home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/xss-clean/lib/index.js:11:5
+PayloadTooLargeError: request entity too large
+    at readStream (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/raw-body/index.js:163:17)
+    at getRawBody (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/raw-body/index.js:116:12)
+    at read (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/body-parser/lib/read.js:79:3)
+    at jsonParser (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/body-parser/lib/types/json.js:138:5)
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:328:13)
+    at /home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at /home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/xss-clean/lib/index.js:11:5
+PayloadTooLargeError: request entity too large
+    at readStream (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/raw-body/index.js:163:17)
+    at getRawBody (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/raw-body/index.js:116:12)
+    at read (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/body-parser/lib/read.js:79:3)
+    at jsonParser (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/body-parser/lib/types/json.js:138:5)
+    at Layer.handle [as handle_request] (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:328:13)
+    at /home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at /home/kleidigs/nodevenv/KleinPanic/18/lib/node_modules/xss-clean/lib/index.js:11:5
+2024-10-11T03:18:32.636Z - Email sent successfully: 250 2.0.0 OK  1728616712 d2e1a72fcca58-71e2a9f522esm1770845b3a.69 - gsmtp
+Error: ENOENT: no such file or directory, stat '/home/kleidigs/KleinPanic/views/w3m-projects.html'
+2024-10-15T00:21:31.317Z - Email sent successfully: 250 2.0.0 OK  1728951691 d2e1a72fcca58-71e774a2b2bsm127063b3a.111 - gsmtp
+2024-10-15T02:56:26.034Z - Email sent successfully: 250 2.0.0 OK  1728960986 d9443c01a7336-20d17f844a5sm2486805ad.17 - gsmtp
+2024-11-19T22:59:49.770Z - Email sent successfully: 250 2.0.0 OK  1732057189 d2e1a72fcca58-724beefee95sm225806b3a.72 - gsmtp
